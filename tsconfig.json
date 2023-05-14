@@ -1,6 +1,9 @@
 {
   "compilerOptions": {
     "target": "es5",
+    "outDir": "./dist/",
+    "rootDir": "./src/",
+    "removeComments": true,
     "lib": [
       "dom",
       "dom.iterable",
@@ -17,10 +20,13 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
+    "noEmit": false,
     "jsx": "react-jsx"
   },
   "include": [
-    "src"
+    "src", "**/*.ts", "**/*.tsx",
+  ],
+  "exclude": [
+    "node_modules"
   ]
 }
