@@ -6,7 +6,7 @@ export const Header = () => {
     <>
       <header className='header'>
         <div className='header__container'>
-          <h2>QuiPro</h2>
+          <h2>{}</h2>
           <nav className='header__nav'>
             <ul className='header__ul'>
               <li>Let's Think!</li>
